@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dr. med. Vera Christoph – Augenärztin in Schleswig</title>
+<meta name="description" content="Augenarztpraxis Dr. med. Vera Christoph, Schleswig. Die Website wird gerade gebaut – Termine online buchen oder unter 04621 / 2 23 50 anrufen.">
+<meta name="theme-color" content="#14505e">
+<style>
+  :root {
+    --tinte: #17282d;
+    --leise: #4c5d62;
+    --petrol: #14505e;
+    --tief: #0e3a44;
+    --wasser: #2f7f88;
+    --schilf: #f6f2ea;
+    --linie: #d9cfbd;
+    --bernstein: #f2c879;
+    --backstein: #a2472a;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background: var(--schilf);
+    color: var(--tinte);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 1.1875rem;
+    line-height: 1.6;
+  }
+  a { color: var(--petrol); }
+  :focus-visible { outline: 3px solid var(--backstein); outline-offset: 3px; border-radius: 2px; }
+
+  .kopf {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem 1.5rem;
+    padding: 1.25rem clamp(1rem, 5vw, 3rem);
+    background: #fff;
+    border-bottom: 1px solid var(--linie);
+  }
+  .kopf__name {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--tief);
+    line-height: 1.25;
+  }
+  .kopf__name small {
+    display: block;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--leise);
+  }
+  .kopf__tel {
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .kopf__tel:hover { text-decoration: underline; }
+
+  main {
+    flex: 1;
+    display: grid;
+    place-items: center;
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+  .inhalt { max-width: 34rem; }
+  .bild { width: 11rem; height: auto; margin: 0 auto 2rem; display: block; }
+  h1 {
+    margin: 0 0 1rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.75rem, 1.3rem + 2vw, 2.5rem);
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--tief);
+    text-wrap: balance;
+  }
+  p { margin: 0 0 2rem; color: var(--leise); }
+
+  .knopf {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 3.25rem;
+    padding: 0.75rem 1.75rem;
+    border-radius: 0.5rem;
+    background: var(--petrol);
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 200ms;
+  }
+  .knopf:hover { background: var(--tief); }
+
+  .oder { margin: 1.25rem 0 0; font-size: 1rem; }
+
+  footer {
+    padding: 1.25rem 1rem;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--leise);
+  }
+</style>
+</head>
+<body>
+
+<header class="kopf">
+  <p class="kopf__name">Dr. med. Vera Christoph<small>Augenärztin in Schleswig</small></p>
+  <a class="kopf__tel" href="tel:+49462122350">04621 / 2 23 50</a>
+</header>
+
+<main>
+  <div class="inhalt">
+    <!-- Sehtafel mit Baustellen-Absperrung -->
+    <svg class="bild" viewBox="0 0 200 220" aria-hidden="true" focusable="false">
+      <rect x="40" y="8" width="120" height="150" rx="8" fill="#fff" stroke="#14505e" stroke-width="4"/>
+      <g fill="#0e3a44" font-family="Georgia, serif" font-weight="700" text-anchor="middle">
+        <text x="100" y="62" font-size="44">E</text>
+        <text x="100" y="96" font-size="24" letter-spacing="4">BAU</text>
+        <text x="100" y="120" font-size="15" letter-spacing="3">STELLE</text>
+        <text x="100" y="140" font-size="9" letter-spacing="2" fill="#4c5d62">BITTE WARTEN</text>
+      </g>
+      <!-- Absperrbake -->
+      <rect x="22" y="168" width="156" height="22" rx="3" fill="#f2c879" stroke="#0e3a44" stroke-width="3"/>
+      <g fill="#0e3a44">
+        <path d="M40 168h14l-18 22H22z"/>
+        <path d="M76 168h14l-18 22H58z"/>
+        <path d="M112 168h14l-18 22H94z"/>
+        <path d="M148 168h14l-18 22h-14z"/>
+      </g>
+      <rect x="36" y="190" width="6" height="26" fill="#0e3a44"/>
+      <rect x="158" y="190" width="6" height="26" fill="#0e3a44"/>
+    </svg>
+
+    <h1>Unsere Website wird gerade scharf gestellt.</h1>
+    <p>Die Website ist noch im Bau. Einen Termin können Sie aber schon jetzt ganz einfach online vereinbaren.</p>
+
+    <a class="knopf" href="https://order.medidate.org/?pid=9a272d7b-3e1f-4dfb-a29c-b8c4f07f1a93&amp;ptok=73764a2b5368664a36575342384972626744486446305a66485449434f796b4c68365a6a552f7858647266756a427437427759595273443553334a6d542b4d4567686571304566345274334137753330336d4237726d4830517a39646278426a514f73676a794237714459473966667954666f713163354e76424f76616b33383033704164736879314952367959412b4b593942637652616a4f716565786646334176327073564166464d3d">Termin buchen</a>
+
+    <p class="oder">oder telefonisch unter <a href="tel:+49462122350">04621 / 2 23 50</a></p>
+  </div>
+</main>
+
+<footer>Plessenstraße 13 · 24837 Schleswig</footer>
+
+</body>
+</html>
